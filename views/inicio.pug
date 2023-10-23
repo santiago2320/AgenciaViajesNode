@@ -1,0 +1,37 @@
+extends ./layout/index
+
+
+block slider
+    .slider
+        h1 Rio de Janeiro
+        em Aventura
+
+block contenido
+    main.container.mt-5
+        h2.text-center.mb-5 Sobre Nosotros
+        .row.mb-5
+            .col-md-6 
+                p En nuestra agencia de viajes, nos enorgullecemos de ser tu socio confiable en la exploración del mundo. Con años de experiencia en la industria, estamos comprometidos a hacer que tus sueños de viajar se hagan realidad. Nuestro equipo de apasionados viajeros y expertos en destinos está dedicado a diseñar experiencias únicas y memorables para nuestros clientes. Desde destinos exóticos hasta escapadas locales, trabajamos incansablemente para garantizar que cada detalle de tu viaje esté cuidadosamente planificado
+                p En el corazón de nuestra agencia de viajes, reside una pasión por descubrir el mundo y compartir esa pasión contigo. Creemos que los viajes no solo son sobre destinos, sino también sobre las experiencias que creas en el camino. Ya sea que estés buscando unas vacaciones relajantes en la playa, una emocionante aventura de exploración o una escapada cultural, te guiamos con conocimiento experto y atención personalizada.
+            .col-md-6
+                img(src="/img/inicio_nosotros.jpg", alt="Imagen Sobre Nosotros" clase="img-fluid")
+            
+            include ./layout/bloque_viajes
+
+    .descuento
+        .container
+            .row
+                .col-md-6
+                    .contenido
+                        h2 5€ de Descuento
+                        p.titulo Viaje a canada
+                        p.fecha 20 de Marzo de 2022 - 28 de Marzo de 2022
+                        p.precio 2.500€
+
+    .container
+        h2.mt-5.text-center Testimoniales
+        
+        include ./layout/bloque_testimoniales
+
+            
+            
